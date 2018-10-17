@@ -76,7 +76,6 @@ describe("Blog Posts", function() {
     return (
       chai
         .request(app)
-        // first have to get
         .get("/blog-posts")
         .then(function(res) {
           const updatedPost = Object.assign(res.body[0], {
@@ -98,7 +97,6 @@ describe("Blog Posts", function() {
     return (
       chai
         .request(app)
-        // first have to get
         .get("/blog-posts")
         .then(function(res) {
           return chai
